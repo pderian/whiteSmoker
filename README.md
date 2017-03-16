@@ -17,8 +17,8 @@ Then, the displacement of each particle is estimated between two consecutive fra
 ![Estimated displacements](resources/track_0200.jpg)
 
 ## Results
-The figure below show the displacement magnitude, in pixel, measured over 1266 frames (about 50 s of video). Each dot corresponds to a vector.
-This proxy to an "average displacement field" is consistent with what can be expected:
+The figure below show the displacement magnitude, in pixel, measured over 1266 frames (about 50 s of video). Each dot corresponds to an estimated vector.
+This proxy to a "displacement field" is consistent with what can be expected:
 - the displacements are larger at the center of the tube than near its boundary;
 - the displacements are also larger in the upper area than in the lower area. Indeed, the former is closer to the camera.
 ![Results](resources/velocity_map_full.png)
