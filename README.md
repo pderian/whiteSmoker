@@ -13,12 +13,11 @@ Below is a sample frame from a video record of a white smoker.
 First, particles moving in the tube are isolated thanks to a background/foreground detection algorithm. This work relies on the "[Running Gaussian average](https://en.wikipedia.org/wiki/Background_subtraction#Running_Gaussian_average)", implemented in [whitesmoker_preproc.py](whitesmoker_preproc.py).
 Below is the same frame as before, now showing particles only.
 ![Foreground particles](resources/diff_0200.jpg)
-
-Then, the displacement of each particle is estimated between two consecutive frames using a classical cross-correlation approach, implemented in [whitesmoker_track.py](whitesmoker_track.py) A quality control process removes the spurious estimates, shown in red in the image below.
+Then, the displacement of each particle is estimated between two consecutive frames using a classical cross-correlation approach, implemented in [whitesmoker_track.py](whitesmoker_track.py). A quality control process removes the spurious estimates, shown in red in the image below.
 ![Estimated displacements](resources/track_0200.jpg)
 
 ## Results
-The figure below show the displacement magnitude in pixel measured over 1266 frames (about 50 s of video). Each dot corresponds to a vector.
+The figure below show the displacement magnitude, in pixel, measured over 1266 frames (about 50 s of video). Each dot corresponds to a vector.
 This proxy to an "average displacement field" is consistent with what can be expected:
 - the displacements are larger at the center of the tube than near its boundary;
 - the displacements are also larger in the upper area than in the lower area. Indeed, the former is closer to the camera.
